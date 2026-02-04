@@ -5,6 +5,7 @@ export interface Program {
   description: string;
   duration: string;
   ects: number;
+  paymentLink: string;
 }
 
 export interface Testimonial {
