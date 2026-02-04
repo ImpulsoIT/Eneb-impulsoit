@@ -18,7 +18,7 @@ export const AmbassadorStory: React.FC = () => {
                {/* Contenedor de la Imagen Real */}
                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100">
                  <img 
-                   src="https://github.com/ImpulsoIT/Eneb-impulsoit/blob/987a233ad1bd85ea5aee62733d96bfbd366db6eb/foto-profesional-cv1.png" // Nota: Reemplaza este URL por la ruta de tu imagen real proporcionada
+                   src="https://impulsoit.github.io/Eneb-impulsoit/foto-profesional-cv1.png"
                    alt="Embajador ENEB - ImpulsoIT" 
                    className="w-full aspect-[4/5] object-cover transition-all duration-700 group-hover:scale-105"
                  />
