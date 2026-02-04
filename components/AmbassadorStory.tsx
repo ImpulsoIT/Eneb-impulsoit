@@ -7,30 +7,24 @@ export const AmbassadorStory: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 relative animate-fade-in-up">
-             {/* Elementos decorativos de fondo */}
              <div className="absolute -top-10 -left-10 w-48 h-48 sm:w-64 sm:h-64 bg-impulsoPink/5 rounded-full blur-3xl animate-pulse"></div>
              <div className="absolute -bottom-10 -right-10 w-48 h-48 sm:w-64 sm:h-64 bg-impulsoOrange/5 rounded-full blur-3xl animate-pulse delay-700"></div>
              
              <div className="relative group max-w-md mx-auto lg:max-w-none">
-               {/* Borde con gradiente animado */}
                <div className="absolute -inset-1 bg-gradient-to-r from-impulsoOrange via-impulsoPink to-impulsoOrange rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
                
-               {/* Contenedor de la Imagen Real de GitHub */}
                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-gray-100">
                  <img 
                    src="https://raw.githubusercontent.com/ImpulsoIT/Eneb-impulsoit/987a233ad1bd85ea5aee62733d96bfbd366db6eb/foto-profesional-cv1.png"
                    alt="Embajador ENEB - ImpulsoIT" 
                    className="w-full aspect-[4/5] object-cover transition-all duration-700 group-hover:scale-105"
                    onError={(e) => {
-                     // Fallback por si hay problemas con el enlace de GitHub
                      (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80";
                    }}
                  />
                  
-                 {/* Overlay Gradiente Inferior */}
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
                  
-                 {/* Badge de Estudiante Verificado */}
                  <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg border border-white/20 flex items-center space-x-2 transform scale-90 sm:scale-100">
                    <span className="flex h-3 w-3 relative">
                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -40,7 +34,6 @@ export const AmbassadorStory: React.FC = () => {
                  </div>
                </div>
 
-               {/* Caja flotante de status - ajustada para móvil */}
                <div className="absolute -bottom-6 right-4 sm:-right-6 lg:-right-12 bg-white p-6 sm:p-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-50 transform group-hover:translate-y-[-10px] transition-transform duration-500 max-w-[220px] sm:max-w-[280px]">
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-impulsoPink to-impulsoOrange flex items-center justify-center text-white font-bold text-sm sm:text-base">🎓</div>
