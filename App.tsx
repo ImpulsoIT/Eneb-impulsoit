@@ -1,15 +1,15 @@
 
 import React, { useState, useEffect } from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { TrustBar } from './components/TrustBar';
-import { Programs } from './components/Programs';
-import { Benefits } from './components/Benefits';
-import { Testimonials } from './components/Testimonials';
-import { AmbassadorStory } from './components/AmbassadorStory';
-import { LeadForm } from './components/LeadForm';
-import { Footer } from './components/Footer';
-import { SuccessModal } from './components/SuccessModal';
+import { Header } from './components/Header.tsx';
+import { Hero } from './components/Hero.tsx';
+import { TrustBar } from './components/TrustBar.tsx';
+import { Programs } from './components/Programs.tsx';
+import { Benefits } from './components/Benefits.tsx';
+import { Testimonials } from './components/Testimonials.tsx';
+import { AmbassadorStory } from './components/AmbassadorStory.tsx';
+import { LeadForm } from './components/LeadForm.tsx';
+import { Footer } from './components/Footer.tsx';
+import { SuccessModal } from './components/SuccessModal.tsx';
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,23 +45,23 @@ const App: React.FC = () => {
         <Programs onSelectProgram={scrollToForm} />
         
         {/* Why Now Section */}
-        <section className="py-20 bg-[#0a0a0a] text-white">
+        <section className="py-16 md:py-24 bg-[#0a0a0a] text-white">
            <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-5xl font-black mb-12 tracking-tight">¿Por qué estudiar ahora con <span className="text-impulsoPink">ImpulsoIT</span>?</h2>
-              <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                 <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
-                    <div className="text-4xl mb-4">💳</div>
-                    <h4 className="text-xl font-bold mb-2">Flexibilidad de Pago</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+                 <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
+                    <div className="text-3xl md:text-4xl mb-4">💳</div>
+                    <h4 className="text-lg md:text-xl font-bold mb-2">Flexibilidad de Pago</h4>
                     <p className="text-sm text-gray-400">Paga hasta en 2 cuotas y en tu propia moneda sin complicaciones bancarias.</p>
                  </div>
-                 <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
-                    <div className="text-4xl mb-4">🚀</div>
-                    <h4 className="text-xl font-bold mb-2">Acompañamiento IA</h4>
+                 <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
+                    <div className="text-3xl md:text-4xl mb-4">🚀</div>
+                    <h4 className="text-lg md:text-xl font-bold mb-2">Acompañamiento IA</h4>
                     <p className="text-sm text-gray-400">Te asesoramos para elegir el máster con mayor proyección en Inteligencia Artificial.</p>
                  </div>
-                 <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
-                    <div className="text-4xl mb-4">🌍</div>
-                    <h4 className="text-xl font-bold mb-2">Validez Global</h4>
+                 <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
+                    <div className="text-3xl md:text-4xl mb-4">🌍</div>
+                    <h4 className="text-lg md:text-xl font-bold mb-2">Validez Global</h4>
                     <p className="text-sm text-gray-400">Títulos apostillables por la Haya con reconocimiento en toda Latinoamérica y España.</p>
                  </div>
               </div>
@@ -70,17 +70,17 @@ const App: React.FC = () => {
 
         <Testimonials />
         
-        <section id="contact-form" className="py-24 bg-enebLight relative">
+        <section id="contact-form" className="py-20 md:py-24 bg-enebLight relative">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-impulsoPink/30 to-transparent"></div>
           <div className="container mx-auto px-4 max-w-5xl">
-            <div className="text-center mb-16 animate-fade-in-up">
+            <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
               <div className="inline-block bg-white text-impulsoPink px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 shadow-sm border border-impulsoPink/10">
                 Auditoría ROI Gratuita
               </div>
-              <h2 className="text-4xl md:text-6xl font-black mb-6 text-enebGrey tracking-tight">
+              <h2 className="text-3xl md:text-6xl font-black mb-6 text-enebGrey tracking-tight">
                 Empieza Hoy Mismo.
               </h2>
-              <p className="text-lg text-gray-500 font-medium max-w-2xl mx-auto">
+              <p className="text-base md:text-lg text-gray-500 font-medium max-w-2xl mx-auto">
                 No dejes pasar la beca del <span className="text-impulsoPink font-bold">97%</span>. Completa tus datos y recibe el enlace directo a <span className="text-enebGrey font-bold underline decoration-impulsoPink">Hotmart</span> para pago local y cuotas.
               </p>
             </div>

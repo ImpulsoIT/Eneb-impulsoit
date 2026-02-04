@@ -26,21 +26,21 @@ const benefitItems = [
 
 export const Benefits: React.FC = () => {
   return (
-    <section id="beneficios" className="py-32 bg-white">
+    <section id="beneficios" className="py-20 md:py-32 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20 animate-fade-in-up">
-          <h2 className="text-4xl md:text-6xl font-black text-enebGrey mb-6 tracking-tight italic">Evolución Profesional.</h2>
-          <div className="w-24 h-2 bg-gradient-to-r from-impulsoOrange to-impulsoPink mx-auto rounded-full"></div>
+        <div className="text-center mb-16 md:20 animate-fade-in-up">
+          <h2 className="text-3xl md:text-6xl font-black text-enebGrey mb-6 tracking-tight italic">Evolución Profesional.</h2>
+          <div className="w-20 md:w-24 h-2 bg-gradient-to-r from-impulsoOrange to-impulsoPink mx-auto rounded-full"></div>
         </div>
         
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {benefitItems.map((item, idx) => (
             <div 
               key={idx} 
-              className={`group p-10 bg-gray-50 rounded-[3rem] text-center hover:bg-[#0a0a0a] transition-all duration-700 border border-transparent hover:border-white/10 hover:-translate-y-4 animate-fade-in-up delay-${(idx + 1) * 100}`}
+              className={`group p-8 md:p-10 bg-gray-50 rounded-[2.5rem] md:rounded-[3rem] text-center hover:bg-[#0a0a0a] transition-all duration-700 border border-transparent hover:border-white/10 hover:-translate-y-4 animate-fade-in-up delay-${(idx + 1) * 100}`}
             >
-              <div className="text-6xl mb-8 transform group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 drop-shadow-xl">{item.icon}</div>
-              <h3 className="text-2xl font-black mb-4 text-enebGrey group-hover:text-white transition-colors tracking-tight">{item.title}</h3>
+              <div className="text-5xl md:text-6xl mb-6 md:mb-8 transform group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 drop-shadow-xl">{item.icon}</div>
+              <h3 className="text-xl md:text-2xl font-black mb-4 text-enebGrey group-hover:text-white transition-colors tracking-tight">{item.title}</h3>
               <p className="text-gray-500 group-hover:text-gray-400 text-sm leading-relaxed font-medium transition-colors">{item.desc}</p>
             </div>
           ))}
