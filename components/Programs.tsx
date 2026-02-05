@@ -13,7 +13,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
         <div className="text-center mb-16 md:mb-20 animate-fade-in-up">
           <h2 className="text-3xl md:text-6xl font-black text-enebGrey mb-6 tracking-tight">Tu Futuro, <span className="text-impulsoPink">Sin Barreras.</span></h2>
           <p className="text-gray-500 max-w-2xl mx-auto font-medium text-base md:text-lg italic px-4">
-            Becas de hasta el 80% disponibles solo a través de ImpulsoIT. Paga en tu moneda local.
+            Becas de hasta el <span className="text-impulsoPink font-bold">89%</span> disponibles solo a través de ImpulsoIT. Paga en tu moneda local.
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-8 px-2">
              <span className="bg-green-100 text-green-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest">✅ Pago Local</span>
@@ -21,7 +21,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {PROGRAMS.map((prog) => (
             <div key={prog.id} className={`group bg-gray-50 rounded-[2.5rem] overflow-hidden hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.15)] transition-all duration-700 flex flex-col h-full border-2 ${prog.id === 'doble-mba' ? 'border-impulsoPink relative md:scale-105 z-10 shadow-lg' : 'border-transparent'}`}>
               {prog.id === 'doble-mba' && (
@@ -36,11 +36,13 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
                   </span>
                   <div className="text-right">
                     <span className="block text-[9px] text-gray-400 line-through font-bold">WAS €2,400</span>
-                    <span className="text-lg md:text-xl font-black text-enebGrey italic">80% OFF</span>
+                    <span className={`text-lg md:text-xl font-black italic ${prog.id === 'doble-mba' ? 'text-impulsoPink' : 'text-enebGrey'}`}>
+                      {prog.discountPercentage}% OFF
+                    </span>
                   </div>
                 </div>
                 <h3 className="text-xl md:text-2xl font-black mb-4 leading-tight text-enebGrey group-hover:text-impulsoPink transition-colors">{prog.title}</h3>
-                <p className="text-gray-500 text-sm mb-6 leading-relaxed font-medium">{prog.description}</p>
+                <p className="text-gray-500 text-sm mb-6 leading-relaxed font-medium line-clamp-3">{prog.description}</p>
                 <div className="flex items-center text-[10px] font-black text-gray-400 space-x-3">
                   <span>⏱ {prog.duration}</span>
                   <span className="hidden sm:inline">|</span>
@@ -56,6 +58,14 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
                   className="block w-full bg-[#0a0a0a] hover:bg-impulsoPink text-white text-center font-black py-4 md:py-5 rounded-2xl text-xs md:text-sm transition-all shadow-xl transform group-hover:-translate-y-1"
                 >
                   ¡QUIERO MI BECA YA!
+                </a>
+                <a 
+                  href={prog.infoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-white border-2 border-gray-100 text-gray-400 hover:text-enebGrey hover:border-enebGrey text-center font-black py-3 rounded-2xl text-[10px] transition-all uppercase tracking-widest"
+                >
+                  📖 Ver más información
                 </a>
                 <p className="text-center text-[8px] md:text-[9px] font-black text-gray-400 uppercase tracking-widest">
                   Paga en tu moneda local • 2 cuotas

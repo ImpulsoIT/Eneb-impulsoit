@@ -15,14 +15,14 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="w-full md:w-3/5 text-center md:text-left animate-fade-in-up">
           <div className="inline-flex items-center bg-white/5 border border-white/10 text-white text-[10px] font-bold px-4 py-2 rounded-full mb-6 tracking-widest uppercase backdrop-blur-sm">
             <span className="w-2 h-2 bg-impulsoPink rounded-full mr-3 animate-pulse"></span>
-            ¡ÚLTIMAS PLAZAS CON BECA DEL 80%!
+            ¡ÚLTIMAS PLAZAS CON BECA DE HASTA EL 89%!
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight md:leading-[1.05] mb-6 tracking-tight">
             Maestría Europea <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">al 80% de Descuento.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">con hasta 89% OFF.</span>
           </h1>
           <p className="text-base md:text-xl text-gray-400 mb-8 max-w-2xl font-medium leading-relaxed">
-            ImpulsoIT te garantiza acceso exclusivo a ENEB. Obtén tu doble titulación pagando en <span className="text-white font-bold underline decoration-impulsoPink">tu moneda local</span> y financia en <span className="text-white font-bold underline decoration-impulsoOrange">hasta 2 cuotas</span>.
+            ImpulsoIT te garantiza acceso exclusivo a ENEB. Obtén tu doble titulación con <span className="text-white font-bold underline decoration-impulsoPink">89% de beca</span> pagando en <span className="text-white font-bold underline decoration-impulsoPink">tu moneda local</span>.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center mb-10">
@@ -64,8 +64,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             />
             
             <div className="absolute -top-10 -right-4 bg-gradient-to-br from-impulsoOrange to-impulsoPink p-4 md:p-6 rounded-3xl shadow-2xl border border-white/20 transform rotate-3 animate-pulse">
-               <p className="text-3xl md:text-4xl font-black text-white leading-none">80%</p>
-               <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">OFF GARANTIZADO</p>
+               <p className="text-3xl md:text-4xl font-black text-white leading-none">89%</p>
+               <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">MAX OFF GARANTIZADO</p>
             </div>
             
             <div className="absolute -bottom-6 -left-2 sm:-left-6 bg-white p-3 md:p-4 rounded-2xl shadow-xl flex items-center space-x-3 transform -rotate-2">

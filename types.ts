@@ -6,6 +6,8 @@ export interface Program {
   duration: string;
   ects: number;
   paymentLink: string;
+  infoLink: string;
+  discountPercentage: number;
 }
 
 export interface Testimonial {
