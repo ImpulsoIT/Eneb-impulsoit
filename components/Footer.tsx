@@ -22,27 +22,27 @@ export const Footer: React.FC = () => {
             </div>
             
             <p className="text-gray-500 text-sm leading-relaxed font-medium">
-              ImpulsoIT, embajadores oficiales de la Escuela de Negocios Europea de Barcelona. Conectamos talento con la mejor formación superior europea.
+              ImpulsoIT, embajadores oficiales de la Escuela de Negocios Europea de Barcelona. Conectamos talento con la mejor formación superior europea en USA y Latinoamérica.
             </p>
           </div>
           
           <div>
-            <h4 className="font-black mb-8 text-xs uppercase tracking-[0.2em] text-gray-300">Formación ENEB</h4>
-            <ul className="text-gray-500 text-sm space-y-4 font-semibold">
-              <li><a href="#programas" className="hover:text-impulsoPink transition-colors">MBA - Business Administration</a></li>
-              <li><a href="#programas" className="hover:text-impulsoPink transition-colors">Dirección de RRHH</a></li>
-              <li><a href="#programas" className="hover:text-impulsoPink transition-colors">Digital Marketing</a></li>
-              <li><a href="#programas" className="hover:text-impulsoPink transition-colors">Corporate Finance</a></li>
+            <h4 className="font-black mb-8 text-xs uppercase tracking-[0.2em] text-gray-300">Cobertura Global</h4>
+            <ul className="text-gray-500 text-sm space-y-4 font-semibold uppercase tracking-tighter">
+              <li className="hover:text-impulsoPink transition-colors">Brasil & Chile</li>
+              <li className="hover:text-impulsoPink transition-colors">Colombia & Ecuador</li>
+              <li className="hover:text-impulsoPink transition-colors">México & Estados Unidos</li>
+              <li className="hover:text-impulsoPink transition-colors">Europa & Internacional</li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-black mb-8 text-xs uppercase tracking-[0.2em] text-gray-300">ImpulsoIT</h4>
             <ul className="text-gray-500 text-sm space-y-4 font-semibold">
-              <li><a href="#beneficios" className="hover:text-impulsoPink transition-colors">Nuestro Rol</a></li>
               <li><a href="#beneficios" className="hover:text-impulsoPink transition-colors">Becas Exclusivas</a></li>
               <li><a href="#testimonios" className="hover:text-impulsoPink transition-colors">Soporte al Alumno</a></li>
-              <li><a href="#" className="hover:text-impulsoPink transition-colors">Alianzas Académicas</a></li>
+              <li><a href="#" className="hover:text-impulsoPink transition-colors">Pagos Locales</a></li>
+              <li><a href="#" className="hover:text-impulsoPink transition-colors">Validación Haya</a></li>
             </ul>
           </div>
 
@@ -51,14 +51,14 @@ export const Footer: React.FC = () => {
             <ul className="text-gray-500 text-sm space-y-4 font-semibold">
               <li className="flex items-center justify-center sm:justify-start">
                 <span className="w-5 h-5 flex items-center justify-center bg-white/5 rounded mr-3 text-[10px]">📍</span>
-                Sorocaba, Brasil
+                Soporte Global ENEB
               </li>
               <li className="flex items-center justify-center sm:justify-start">
                 <span className="w-5 h-5 flex items-center justify-center bg-white/5 rounded mr-3 text-[10px]">✉️</span>
                 contacto@impulsoit.com
               </li>
-              <li className="text-white font-black text-lg mt-4 block">
-                Lidera tu futuro hoy.
+              <li className="text-white font-black text-xs mt-4 block uppercase tracking-widest">
+                Monedas: EUR, USD, MXN, CLP, COP
               </li>
             </ul>
           </div>

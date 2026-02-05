@@ -15,14 +15,14 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="w-full md:w-3/5 text-center md:text-left animate-fade-in-up">
           <div className="inline-flex items-center bg-white/5 border border-white/10 text-white text-[10px] font-bold px-4 py-2 rounded-full mb-6 tracking-widest uppercase backdrop-blur-sm">
             <span className="w-2 h-2 bg-impulsoPink rounded-full mr-3 animate-pulse"></span>
-            ¡ÚLTIMAS PLAZAS CON BECA DE HASTA EL 89%!
+            VÁLIDO EN: BR · CL · CO · US · MX · EC · EU
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight md:leading-[1.05] mb-6 tracking-tight">
             Maestría Europea <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">con hasta 89% OFF.</span>
           </h1>
           <p className="text-base md:text-xl text-gray-400 mb-8 max-w-2xl font-medium leading-relaxed">
-            ImpulsoIT te garantiza acceso exclusivo a ENEB. Obtén tu doble titulación con <span className="text-white font-bold underline decoration-impulsoPink">89% de beca</span> pagando en <span className="text-white font-bold underline decoration-impulsoPink">tu moneda local</span>.
+            ImpulsoIT garantiza acceso exclusivo a ENEB. Obtén tu doble titulación con <span className="text-white font-bold underline decoration-impulsoPink">89% de beca</span> pagando en <span className="text-white font-bold underline decoration-impulsoPink">EUR, USD, MXN, CLP o COP</span>.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center mb-10">
@@ -37,19 +37,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                <div className="flex space-x-1 mb-1">
                   {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-500 text-lg">★</span>)}
                </div>
-               <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">Inscripción inmediata disponible</p>
+               <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest italic">89% OFF Solo para Doble MBA</p>
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center md:justify-start gap-4 opacity-70">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 opacity-80">
              <div className="flex items-center bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                <span className="text-xs font-bold">💳 2 Cuotas Sin Interés</span>
+                <span className="text-[10px] font-black tracking-widest">MONEDAS:</span>
+                <span className="ml-2 text-[10px] font-black text-impulsoPink">EUR · USD · MXN · CLP · COP</span>
              </div>
              <div className="flex items-center bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                <span className="text-xs font-bold">🌎 Pago en Moneda Local</span>
-             </div>
-             <div className="flex items-center bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                <span className="text-xs font-bold">🎓 Doble Titulación</span>
+                <span className="text-[10px] font-black">🎓 DOBLE TÍTULO</span>
              </div>
           </div>
         </div>
@@ -59,22 +57,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             <div className="absolute -inset-4 bg-gradient-to-r from-impulsoOrange to-impulsoPink rounded-3xl blur-2xl opacity-20"></div>
             <img 
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" 
-              alt="Comunidad ImpulsoIT" 
+              alt="Comunidad ImpulsoIT Global" 
               className="relative rounded-[2.5rem] shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-1000 w-full h-auto"
             />
             
             <div className="absolute -top-10 -right-4 bg-gradient-to-br from-impulsoOrange to-impulsoPink p-4 md:p-6 rounded-3xl shadow-2xl border border-white/20 transform rotate-3 animate-pulse">
                <p className="text-3xl md:text-4xl font-black text-white leading-none">89%</p>
-               <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">MAX OFF GARANTIZADO</p>
+               <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">MAX OFF</p>
             </div>
             
             <div className="absolute -bottom-6 -left-2 sm:-left-6 bg-white p-3 md:p-4 rounded-2xl shadow-xl flex items-center space-x-3 transform -rotate-2">
-               <div className="flex -space-x-2">
-                  <img className="w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=1" />
-                  <img className="w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=2" />
-                  <img className="w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=3" />
-               </div>
-               <p className="text-[9px] md:text-[10px] font-black text-enebGrey uppercase">Más de 60k Graduados</p>
+               <p className="text-[9px] md:text-[10px] font-black text-enebGrey uppercase">Válido en USA y LATAM</p>
             </div>
           </div>
         </div>

@@ -31,8 +31,8 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen font-sans bg-white selection:bg-impulsoPink selection:text-white overflow-x-hidden">
       {/* Promo Bar */}
-      <div className="bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white py-2.5 px-4 text-center text-[10px] md:text-xs font-black uppercase tracking-[0.2em] relative z-[60]">
-         ⚡ Oferta Flash: Becas de hasta el 89% limitadas por Embajador. ¡Inscríbete hoy! ⚡
+      <div className="bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white py-2.5 px-4 text-center text-[9px] md:text-xs font-black uppercase tracking-[0.15em] relative z-[60]">
+         ⚡ Becas del 89% para Brasil, Chile, Colombia, USA, México, Ecuador y Europa. ¡Plazas Limitadas! ⚡
       </div>
 
       <Header onCtaClick={scrollToForm} />
@@ -51,18 +51,18 @@ const App: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
                  <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
                     <div className="text-3xl md:text-4xl mb-4">💳</div>
-                    <h4 className="text-lg md:text-xl font-bold mb-2">Flexibilidad de Pago</h4>
-                    <p className="text-sm text-gray-400">Paga hasta en 2 cuotas y en tu propia moneda sin complicaciones bancarias.</p>
+                    <h4 className="text-lg md:text-xl font-bold mb-2">Flexibilidad Local</h4>
+                    <p className="text-sm text-gray-400">Paga en EUR, USD, MXN, CLP o COP. Hasta en 2 cuotas sin complicaciones bancarias.</p>
                  </div>
                  <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
                     <div className="text-3xl md:text-4xl mb-4">🚀</div>
                     <h4 className="text-lg md:text-xl font-bold mb-2">Acompañamiento IA</h4>
-                    <p className="text-sm text-gray-400">Te asesoramos para elegir el máster con mayor proyección en Inteligencia Artificial.</p>
+                    <p className="text-sm text-gray-400">Asesoría experta para elegir el máster con mayor proyección tecnológica en 2025.</p>
                  </div>
                  <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
                     <div className="text-3xl md:text-4xl mb-4">🌍</div>
-                    <h4 className="text-lg md:text-xl font-bold mb-2">Validez Global</h4>
-                    <p className="text-sm text-gray-400">Títulos apostillables por la Haya con reconocimiento en toda Latinoamérica y España.</p>
+                    <h4 className="text-lg md:text-xl font-bold mb-2">Prestigio Europeo</h4>
+                    <p className="text-sm text-gray-400">Títulos oficiales apostillables con validez en toda América y la Unión Europea.</p>
                  </div>
               </div>
            </div>
@@ -75,13 +75,13 @@ const App: React.FC = () => {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
               <div className="inline-block bg-white text-impulsoPink px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 shadow-sm border border-impulsoPink/10">
-                Auditoría ROI Gratuita
+                Soporte Global: USA, LATAM & Europa
               </div>
               <h2 className="text-3xl md:text-6xl font-black mb-6 text-enebGrey tracking-tight">
                 Empieza Hoy Mismo.
               </h2>
               <p className="text-base md:text-lg text-gray-500 font-medium max-w-2xl mx-auto">
-                No dejes pasar la beca de hasta el <span className="text-impulsoPink font-bold">89%</span>. Completa tus datos y recibe el enlace directo a <span className="text-enebGrey font-bold underline decoration-impulsoPink">Hotmart</span> para pago local y cuotas.
+                No dejes pasar la beca de hasta el <span className="text-impulsoPink font-bold">89%</span>. Aceptamos pagos en <span className="text-enebGrey font-bold">EUR, USD, MXN, CLP y COP</span> mediante Hotmart.
               </p>
             </div>
             <LeadForm onSuccess={() => setIsModalOpen(true)} />
@@ -92,16 +92,16 @@ const App: React.FC = () => {
       <Footer />
 
       {/* Sticky Mobile CTA for conversion */}
-      <div className={`fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.15)] md:hidden transition-transform duration-500 z-40 ${showStickyCta ? 'translate-y-0' : 'translate-y-full'}`}>
+      <div className={`fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.15)] md:hidden z-40 transition-transform duration-500 ${showStickyCta ? 'translate-y-0' : 'translate-y-full'}`}>
         <div className="flex flex-col gap-2">
            <div className="text-[9px] text-center font-black text-impulsoPink uppercase tracking-tighter animate-pulse">
-              ⚡ Últimas plazas disponibles con becas de hasta el 89% ⚡
+              ⚡ Oferta válida para Brasil, Chile, Colombia, USA, México y Europa ⚡
            </div>
            <button 
              onClick={scrollToForm}
              className="w-full bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white font-black py-4 rounded-2xl shadow-lg active:scale-95 transition-all text-sm tracking-widest uppercase flex items-center justify-center"
            >
-             <span className="mr-2">📱</span> ¡PEDIR MI BECA YA!
+             <span className="mr-2">📱</span> SOLICITAR BECA (89% OFF)
            </button>
         </div>
       </div>
