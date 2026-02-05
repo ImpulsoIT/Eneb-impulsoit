@@ -32,7 +32,7 @@ const App: React.FC = () => {
     <div className="min-h-screen font-sans bg-white selection:bg-impulsoPink selection:text-white overflow-x-hidden">
       {/* Promo Bar */}
       <div className="bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white py-2.5 px-4 text-center text-[10px] md:text-xs font-black uppercase tracking-[0.2em] relative z-[60]">
-         ⚡ Oferta Flash: Becas del 97% limitadas por Embajador. ¡Inscríbete hoy! ⚡
+         ⚡ Oferta Flash: Becas del 80% limitadas por Embajador. ¡Inscríbete hoy! ⚡
       </div>
 
       <Header onCtaClick={scrollToForm} />
@@ -81,7 +81,7 @@ const App: React.FC = () => {
                 Empieza Hoy Mismo.
               </h2>
               <p className="text-base md:text-lg text-gray-500 font-medium max-w-2xl mx-auto">
-                No dejes pasar la beca del <span className="text-impulsoPink font-bold">97%</span>. Completa tus datos y recibe el enlace directo a <span className="text-enebGrey font-bold underline decoration-impulsoPink">Hotmart</span> para pago local y cuotas.
+                No dejes pasar la beca del <span className="text-impulsoPink font-bold">80%</span>. Completa tus datos y recibe el enlace directo a <span className="text-enebGrey font-bold underline decoration-impulsoPink">Hotmart</span> para pago local y cuotas.
               </p>
             </div>
             <LeadForm onSuccess={() => setIsModalOpen(true)} />
@@ -95,7 +95,7 @@ const App: React.FC = () => {
       <div className={`fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.15)] md:hidden transition-transform duration-500 z-40 ${showStickyCta ? 'translate-y-0' : 'translate-y-full'}`}>
         <div className="flex flex-col gap-2">
            <div className="text-[9px] text-center font-black text-impulsoPink uppercase tracking-tighter animate-pulse">
-              ⚡ Últimas 3 plazas disponibles con beca ⚡
+              ⚡ Últimas plazas disponibles con beca ⚡
            </div>
            <button 
              onClick={scrollToForm}

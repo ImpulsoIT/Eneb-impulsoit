@@ -13,7 +13,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
         <div className="text-center mb-16 md:mb-20 animate-fade-in-up">
           <h2 className="text-3xl md:text-6xl font-black text-enebGrey mb-6 tracking-tight">Tu Futuro, <span className="text-impulsoPink">Sin Barreras.</span></h2>
           <p className="text-gray-500 max-w-2xl mx-auto font-medium text-base md:text-lg italic px-4">
-            Becas de hasta el 97% disponibles solo a través de ImpulsoIT. Paga en tu moneda local.
+            Becas de hasta el 80% disponibles solo a través de ImpulsoIT. Paga en tu moneda local.
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-8 px-2">
              <span className="bg-green-100 text-green-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest">✅ Pago Local</span>
@@ -36,7 +36,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
                   </span>
                   <div className="text-right">
                     <span className="block text-[9px] text-gray-400 line-through font-bold">WAS €2,400</span>
-                    <span className="text-lg md:text-xl font-black text-enebGrey italic">97% OFF</span>
+                    <span className="text-lg md:text-xl font-black text-enebGrey italic">80% OFF</span>
                   </div>
                 </div>
                 <h3 className="text-xl md:text-2xl font-black mb-4 leading-tight text-enebGrey group-hover:text-impulsoPink transition-colors">{prog.title}</h3>

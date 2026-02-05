@@ -15,11 +15,11 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="w-full md:w-3/5 text-center md:text-left animate-fade-in-up">
           <div className="inline-flex items-center bg-white/5 border border-white/10 text-white text-[10px] font-bold px-4 py-2 rounded-full mb-6 tracking-widest uppercase backdrop-blur-sm">
             <span className="w-2 h-2 bg-impulsoPink rounded-full mr-3 animate-pulse"></span>
-            ¡ÚLTIMAS PLAZAS CON BECA DEL 97%!
+            ¡ÚLTIMAS PLAZAS CON BECA DEL 80%!
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight md:leading-[1.05] mb-6 tracking-tight">
             Maestría Europea <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">al 97% de Descuento.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">al 80% de Descuento.</span>
           </h1>
           <p className="text-base md:text-xl text-gray-400 mb-8 max-w-2xl font-medium leading-relaxed">
             ImpulsoIT te garantiza acceso exclusivo a ENEB. Obtén tu doble titulación pagando en <span className="text-white font-bold underline decoration-impulsoPink">tu moneda local</span> y financia en <span className="text-white font-bold underline decoration-impulsoOrange">hasta 2 cuotas</span>.
@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             />
             
             <div className="absolute -top-10 -right-4 bg-gradient-to-br from-impulsoOrange to-impulsoPink p-4 md:p-6 rounded-3xl shadow-2xl border border-white/20 transform rotate-3 animate-pulse">
-               <p className="text-3xl md:text-4xl font-black text-white leading-none">97%</p>
+               <p className="text-3xl md:text-4xl font-black text-white leading-none">80%</p>
                <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">OFF GARANTIZADO</p>
             </div>
             
