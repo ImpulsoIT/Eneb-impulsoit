@@ -8,7 +8,7 @@ export const PROGRAMS: Program[] = [
   {
     id: 'doble-mba',
     title: 'Doble Máster: MBA + Maestría a elección',
-    description: 'El programa insignia: Obtén dos titulaciones superiores y lidera proyectos de alta complejidad.',
+    description: 'La formación más completa: Obtén el MBA junto con una especialización técnica para dominar el mercado laboral.',
     duration: '24 meses',
     ects: 120,
     paymentLink: 'https://go.hotmart.com/P104262470Y?ap=adee',
@@ -16,9 +16,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 89
   },
   {
-    id: 'mba',
+    id: 'mba-admin',
     title: 'MBA – Administración y Dirección de Empresas',
-    description: 'Visión estratégica 360º para dirigir organizaciones en entornos globales y competitivos.',
+    description: 'Desarrolla habilidades directivas y visión estratégica para liderar organizaciones en entornos competitivos.',
     duration: '18 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -28,7 +28,7 @@ export const PROGRAMS: Program[] = [
   {
     id: 'big-data',
     title: 'Máster en Big Data y Business Intelligence',
-    description: 'Transforma datos masivos en decisiones estratégicas de alto impacto empresarial.',
+    description: 'Aprende a gestionar y analizar grandes volúmenes de datos para la toma de decisiones empresariales inteligentes.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -38,7 +38,7 @@ export const PROGRAMS: Program[] = [
   {
     id: 'coaching',
     title: 'Máster en Coaching y Mindfulness',
-    description: 'Desarrolla el liderazgo consciente y maximiza el potencial humano en las organizaciones.',
+    description: 'Domina las herramientas de liderazgo personal y gestión emocional para potenciar el talento humano.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -48,7 +48,7 @@ export const PROGRAMS: Program[] = [
   {
     id: 'fintech',
     title: 'Máster en Fintech & Blockchain',
-    description: 'Domina las finanzas tecnológicas y la arquitectura descentralizada de la nueva economía.',
+    description: 'Especialízate en las tecnologías financieras que están revolucionando el sector bancario y económico global.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -58,7 +58,7 @@ export const PROGRAMS: Program[] = [
   {
     id: 'mercados',
     title: 'Máster en Mercados Financieros y Gestión de Activos',
-    description: 'Especialización avanzada en análisis de inversión y gestión de carteras internacionales.',
+    description: 'Avanza en el análisis bursátil y la gestión profesional de carteras de inversión internacionales.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -68,7 +68,7 @@ export const PROGRAMS: Program[] = [
   {
     id: 'digital-business',
     title: 'Máster en Digital Business',
-    description: 'Lidera la transformación digital y los nuevos modelos de negocio tecnológicos.',
+    description: 'Domina los nuevos modelos de negocio digitales y lidera la transformación tecnológica de las empresas.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -76,9 +76,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'project',
+    id: 'project-management',
     title: 'Máster en Project Management',
-    description: 'Dirección profesional de proyectos bajo estándares internacionales de eficiencia.',
+    description: 'Gestiona proyectos de gran envergadura utilizando metodologías ágiles y estándares internacionales.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -86,9 +86,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'revenue',
+    id: 'revenue-hospitality',
     title: 'Máster en Revenue Management y Hospitality',
-    description: 'Optimización de ingresos y gestión estratégica para el sector hotelero de lujo.',
+    description: 'Optimiza la rentabilidad en el sector hotelero mediante estrategias avanzadas de gestión de ingresos.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -96,9 +96,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'logistica',
-    title: 'Máster en Dirección Logística y Supply Chain',
-    description: 'Gestión integral de la cadena de suministro y distribución en mercados globales.',
+    id: 'logistica-supply',
+    title: 'Máster en Dirección Logística y Supply Chain Management',
+    description: 'Domina la cadena de suministro global y los procesos logísticos de última milla con eficiencia.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -106,9 +106,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'equipos',
+    id: 'gestion-equipos',
     title: 'Máster en Gestión y Dirección de Equipos',
-    description: 'Habilidades directivas para motivar y liderar equipos de alto rendimiento.',
+    description: 'Potencia tus habilidades directivas para inspirar, motivar y liderar equipos de alto rendimiento.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -116,9 +116,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'rrhh',
+    id: 'rrhh-talento',
     title: 'Máster en Recursos Humanos y Gestión del Talento',
-    description: 'Estrategias innovadoras para la atracción, retención y desarrollo del capital humano.',
+    description: 'Descubre las tendencias en atracción y retención de talento en la era de la digitalización.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -126,9 +126,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'comercial',
+    id: 'comercial-marketing',
     title: 'Máster en Dirección Comercial y Marketing',
-    description: 'Incrementa la competitividad y las ventas mediante estrategias comerciales sólidas.',
+    description: 'Define estrategias de mercado exitosas y gestiona redes de ventas orientadas a resultados.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
@@ -136,9 +136,9 @@ export const PROGRAMS: Program[] = [
     discountPercentage: 80
   },
   {
-    id: 'mkt-digital',
+    id: 'mkt-analytics',
     title: 'Máster en Marketing Digital y Analytics',
-    description: 'Domina el ecosistema digital y la analítica de datos para campañas de alto ROI.',
+    description: 'Especialízate en publicidad digital, SEO/SEM y análisis de datos para optimizar campañas.',
     duration: '12 meses',
     ects: 60,
     paymentLink: 'https://pay.hotmart.com/Y92194798R?off=1f77986j&ref=J103284771A&bid=1770215326204',
