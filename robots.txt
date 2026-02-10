@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eneb.impulsoit.com/sitemap.xml

@@ -105,9 +105,11 @@ export const AmbassadorStory: React.FC = () => {
                   </button>
                </div>
              </div>
-          </article>
-        </div>
+             {/* Fix: Added missing closing div for the Right Column (line 51) */}
+          </div>
+        </article>
       </div>
+      {/* Fix: Corrected nesting hierarchy and removed extra stray closing div */}
     </section>
   );
 };
