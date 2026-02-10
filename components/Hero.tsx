@@ -18,11 +18,11 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             VÁLIDO EN: BR · CL · CO · US · MX · EC · EU
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight md:leading-[1.05] mb-6 tracking-tight">
-            Maestría Europea <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">con hasta 89% OFF.</span>
+            Maestría Europea con <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-impulsoOrange to-impulsoPink animate-pulse">89% de Beca Garantizada.</span>
           </h1>
           <p className="text-base md:text-xl text-gray-400 mb-8 max-w-2xl font-medium leading-relaxed">
-            ImpulsoIT garantiza acceso exclusivo a ENEB. Obtén tu doble titulación con <span className="text-white font-bold underline decoration-impulsoPink">89% de beca</span> pagando en <span className="text-white font-bold underline decoration-impulsoPink">EUR, USD, MXN, CLP o COP</span>.
+            ImpulsoIT garantiza acceso exclusivo a ENEB. Obtén tu doble titulación con <span className="text-white font-bold underline decoration-impulsoPink">89% de descuento</span> pagando en <span className="text-white font-bold underline decoration-impulsoPink">EUR, USD, MXN, CLP o COP</span>.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center mb-10">
@@ -35,9 +35,9 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             </button>
             <div className="flex flex-col items-center md:items-start">
                <div className="flex space-x-1 mb-1">
-                  {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-500 text-lg">★</span>)}
+                  {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-500 text-lg" aria-hidden="true">★</span>)}
                </div>
-               <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest italic">89% OFF Solo para Doble MBA</p>
+               <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest italic">89% OFF Solo para Doble MBA + Maestría</p>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <span className="ml-2 text-[10px] font-black text-impulsoPink">EUR · USD · MXN · CLP · COP</span>
              </div>
              <div className="flex items-center bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                <span className="text-[10px] font-black">🎓 DOBLE TÍTULO</span>
+                <span className="text-[10px] font-black">🎓 DOBLE TÍTULO OFICIAL</span>
              </div>
           </div>
         </div>
@@ -57,17 +57,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             <div className="absolute -inset-4 bg-gradient-to-r from-impulsoOrange to-impulsoPink rounded-3xl blur-2xl opacity-20"></div>
             <img 
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" 
-              alt="Comunidad ImpulsoIT Global" 
+              alt="Estudiantes exitosos de ImpulsoIT celebrando su beca para Maestría Europea en ENEB" 
               className="relative rounded-[2.5rem] shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-1000 w-full h-auto"
             />
             
             <div className="absolute -top-10 -right-4 bg-gradient-to-br from-impulsoOrange to-impulsoPink p-4 md:p-6 rounded-3xl shadow-2xl border border-white/20 transform rotate-3 animate-pulse">
                <p className="text-3xl md:text-4xl font-black text-white leading-none">89%</p>
-               <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">MAX OFF</p>
+               <p className="text-[10px] font-black uppercase text-white tracking-widest mt-1">DESCUENTO MÁXIMO</p>
             </div>
             
             <div className="absolute -bottom-6 -left-2 sm:-left-6 bg-white p-3 md:p-4 rounded-2xl shadow-xl flex items-center space-x-3 transform -rotate-2">
-               <p className="text-[9px] md:text-[10px] font-black text-enebGrey uppercase">Válido en USA y LATAM</p>
+               <p className="text-[9px] md:text-[10px] font-black text-enebGrey uppercase">Becas válidas para USA, LATAM y Europa</p>
             </div>
           </div>
         </div>

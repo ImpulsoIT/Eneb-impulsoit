@@ -10,7 +10,6 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
     <header className="sticky top-0 w-full bg-[#0a0a0a] border-b border-white/5 z-50 py-3">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          {/* Recreating ImpulsoIT Logo visual style from images */}
           <div className="flex items-center">
             <div className="relative flex items-center justify-center w-10 h-10 mr-2">
               <div className="absolute inset-0 bg-gradient-to-br from-impulsoOrange to-impulsoPink rounded-full blur-[2px] opacity-90"></div>
@@ -28,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
           </div>
         </div>
         
-        <nav className="hidden lg:flex items-center space-x-8 text-xs font-bold text-white uppercase tracking-widest">
+        <nav aria-label="Navegación principal" className="hidden lg:flex items-center space-x-8 text-xs font-bold text-white uppercase tracking-widest">
           <a href="#beneficios" className="hover:text-impulsoPink transition-colors">Beneficios</a>
           <a href="#programas" className="hover:text-impulsoPink transition-colors">Programas</a>
           <a href="#testimonios" className="hover:text-impulsoPink transition-colors">Alumnos</a>
