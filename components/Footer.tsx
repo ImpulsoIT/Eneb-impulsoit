@@ -9,15 +9,21 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-16 text-center sm:text-left">
           <div className="col-span-1">
-            {/* Logo recreation */}
+            {/* Logo recreation con estilo refinado */}
             <div className="flex items-center justify-center sm:justify-start mb-8">
-              <div className="relative flex items-center justify-center w-10 h-10 mr-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-impulsoOrange to-impulsoPink rounded-full blur-[1px]"></div>
-                <span className="relative text-white font-extrabold text-sm z-10">IT</span>
+              <div className="relative flex items-center justify-center w-10 h-10 mr-3">
+                <div className="absolute inset-0 bg-gradient-to-br from-impulsoOrange to-impulsoPink rounded-full blur-[4px] opacity-70"></div>
+                <div className="absolute inset-0.5 bg-gradient-to-br from-impulsoOrange to-impulsoPink rounded-full"></div>
+                <span className="relative text-white font-black text-xs z-10">IT</span>
               </div>
-              <div className="flex items-baseline font-black tracking-tighter text-2xl">
-                <span className="text-white">IMPULSO</span>
-                <span className="text-impulsoPink">IT</span>
+              <div className="flex flex-col">
+                <div className="flex items-baseline font-[900] tracking-tighter text-2xl leading-none">
+                  <span className="text-white">IMPULSO</span>
+                  <span className="text-impulsoPink">IT</span>
+                </div>
+                <div className="text-[8px] font-bold text-gray-500 uppercase tracking-widest mt-0.5">
+                  EMBAJADORES DE ENEB
+                </div>
               </div>
             </div>
             

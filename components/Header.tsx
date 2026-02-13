@@ -7,21 +7,24 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
   return (
-    <header className="sticky top-0 w-full bg-[#0a0a0a] border-b border-white/5 z-50 py-3">
+    <header className="sticky top-0 w-full bg-[#0a0a0a] border-b border-white/10 z-50 py-3">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <div className="flex items-center">
-            <div className="relative flex items-center justify-center w-10 h-10 mr-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-impulsoOrange to-impulsoPink rounded-full blur-[2px] opacity-90"></div>
-              <span className="relative text-white font-extrabold text-sm z-10">IT</span>
+            {/* Brillo radial "IT" exacto a la imagen */}
+            <div className="relative flex items-center justify-center w-12 h-12 mr-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-impulsoOrange via-impulsoPink to-impulsoPink rounded-full blur-[8px] opacity-80 animate-pulse"></div>
+              <div className="absolute inset-1 bg-gradient-to-br from-impulsoOrange to-impulsoPink rounded-full"></div>
+              <span className="relative text-white font-black text-base z-10 tracking-tighter">IT</span>
             </div>
+            
             <div className="flex flex-col">
-               <div className="flex items-baseline font-black tracking-tighter text-2xl leading-none">
+              <div className="flex items-baseline font-[900] tracking-tighter text-3xl leading-none">
                 <span className="text-white">IMPULSO</span>
                 <span className="text-impulsoPink">IT</span>
               </div>
-              <div className="text-[9px] font-bold text-gray-400 uppercase tracking-widest mt-1">
-                Embajadores de ENEB
+              <div className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em] mt-0.5">
+                EMBAJADORES DE ENEB
               </div>
             </div>
           </div>
@@ -35,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
 
         <button 
           onClick={onCtaClick}
-          className="bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white px-6 py-2.5 rounded-lg font-bold text-xs hover:brightness-110 transition-all shadow-lg active:scale-95"
+          className="bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white px-7 py-3 rounded-xl font-black text-xs hover:brightness-110 transition-all shadow-[0_10px_20px_-5px_rgba(255,0,122,0.3)] active:scale-95 uppercase tracking-widest"
         >
           SOLICITAR BECA
         </button>
