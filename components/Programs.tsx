@@ -8,93 +8,78 @@ interface ProgramsProps {
 
 export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
   return (
-    <section id="programas" className="py-24 bg-white">
-      <div className="container mx-auto px-4">
-        <header className="text-center mb-16 md:mb-20 animate-fade-in-up">
-          <h2 className="text-3xl md:text-6xl font-black text-enebGrey mb-6 tracking-tight italic uppercase">
-            Catálogo de Maestrías <span className="text-impulsoPink">2025.</span>
+    <section id="programas" className="py-32 bg-white relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0a0a0a] to-transparent"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <header className="text-center mb-24 scroll-reveal">
+          <h2 className="text-4xl md:text-8xl font-[900] text-enebGrey mb-8 tracking-tighter italic uppercase leading-none">
+            Maestrías <span className="text-impulsoPink">Top 2025.</span>
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto font-medium text-base md:text-lg italic px-4">
-            Becas activas de hasta el 89% para Brasil, Chile, Colombia, USA, México, Ecuador y Europa. Pago en moneda local garantizado.
+          <p className="text-gray-500 max-w-2xl mx-auto font-semibold text-lg md:text-xl px-4 leading-relaxed">
+            Becas garantizadas para residentes en Latinoamérica y USA. Paga en <strong>MXN, CLP, COP, EUR o USD</strong>.
           </p>
-          <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-8 px-2" role="list">
-             <span className="bg-gray-100 text-gray-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest border border-gray-200">💰 EUR</span>
-             <span className="bg-gray-100 text-gray-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest border border-gray-200">💰 USD</span>
-             <span className="bg-gray-100 text-gray-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest border border-gray-200">💰 MXN</span>
-             <span className="bg-gray-100 text-gray-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest border border-gray-200">💰 CLP</span>
-             <span className="bg-gray-100 text-gray-700 px-3 md:px-4 py-1.5 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest border border-gray-200">💰 COP</span>
-          </div>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-          {PROGRAMS.map((prog) => (
-            <article key={prog.id} className={`group bg-gray-50 rounded-[2.5rem] overflow-hidden hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.15)] transition-all duration-700 flex flex-col h-full border-2 ${prog.id === 'doble-mba' ? 'border-impulsoPink relative md:scale-105 z-10 shadow-lg' : 'border-transparent'}`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10">
+          {PROGRAMS.map((prog, idx) => (
+            <article 
+              key={prog.id} 
+              className={`group bg-gray-50 rounded-[3.5rem] overflow-hidden hover:bg-white hover:shadow-[0_60px_100px_-20px_rgba(0,0,0,0.18)] transition-all duration-700 flex flex-col h-full border-2 scroll-reveal delay-${(idx % 4 + 1) * 100} ${prog.id === 'doble-mba' ? 'border-impulsoPink/30 relative xl:scale-110 z-10' : 'border-transparent'}`}
+            >
               {prog.id === 'doble-mba' && (
-                <div className="absolute top-0 right-0 bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white text-[9px] font-black px-4 py-1.5 rounded-bl-2xl uppercase tracking-widest animate-pulse">
-                  89% OFF • RECOMENDADO
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-impulsoOrange to-impulsoPink text-white text-[10px] font-black px-8 py-2 rounded-b-[1.5rem] uppercase tracking-[0.2em] shadow-lg">
+                  N°1 EN VENTAS
                 </div>
               )}
-              <div className="p-6 md:p-8 flex-grow">
-                <header className="flex justify-between items-start mb-6">
-                  <span className={`text-[9px] font-black px-2.5 py-1.5 rounded-lg uppercase tracking-wider ${prog.id === 'doble-mba' ? 'bg-impulsoPink/10 text-impulsoPink' : 'bg-gray-200 text-gray-500'}`}>
-                    {prog.ects} CRÉDITOS ECTS
-                  </span>
+              
+              <div className="p-10 flex-grow">
+                <header className="flex justify-between items-start mb-10">
+                  <div className="flex flex-col gap-2">
+                    <span className={`text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest inline-block ${prog.id === 'doble-mba' ? 'bg-impulsoPink text-white' : 'bg-gray-200 text-gray-500'}`}>
+                      {prog.ects} ECTS
+                    </span>
+                    <span className="text-[8px] font-black text-gray-400 uppercase tracking-widest pl-1">
+                      Pago: MXN · CLP · COP
+                    </span>
+                  </div>
                   <div className="text-right">
-                    <span className="block text-[9px] text-gray-400 line-through font-bold tracking-tighter">VALOR: €2.400</span>
-                    <span className={`text-lg md:text-xl font-black italic ${prog.id === 'doble-mba' ? 'text-impulsoPink' : 'text-enebGrey'}`}>
+                    <span className="block text-[10px] text-gray-400 line-through font-black tracking-tighter opacity-50 mb-1">PVP: €2.400</span>
+                    <span className={`text-2xl font-black italic ${prog.id === 'doble-mba' ? 'text-impulsoPink' : 'text-enebGrey'}`}>
                       {prog.discountPercentage}% OFF
                     </span>
                   </div>
                 </header>
-                <h3 className="text-xl md:text-2xl font-black mb-4 leading-tight text-enebGrey group-hover:text-impulsoPink transition-colors">{prog.title}</h3>
-                <p className="text-gray-500 text-sm mb-6 leading-relaxed font-medium line-clamp-3">{prog.description}</p>
-                <footer className="flex items-center text-[10px] font-black text-gray-400 space-x-3">
-                  <span>🎓 Titulación Oficial Europea</span>
-                </footer>
+                
+                <h3 className="text-2xl md:text-3xl font-black mb-6 leading-[1.1] text-enebGrey group-hover:text-impulsoPink transition-colors tracking-tight">
+                  {prog.title}
+                </h3>
+                
+                <p className="text-gray-500 text-base mb-8 leading-relaxed font-medium">
+                  {prog.description}
+                </p>
+                
+                <div className="flex items-center text-[11px] font-black text-gray-400 space-x-2 opacity-60">
+                  <span className="text-xl">💳</span>
+                  <span className="uppercase tracking-[0.1em]">Aceptamos Moneda Local</span>
+                </div>
               </div>
               
-              <div className="p-6 pt-0 space-y-3">
+              <div className="p-10 pt-0 space-y-4">
                 <a 
                   href={prog.paymentLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-[#0a0a0a] hover:bg-impulsoPink text-white text-center font-black py-4 md:py-5 rounded-2xl text-xs md:text-sm transition-all shadow-xl transform group-hover:-translate-y-1"
+                  className="block w-full shine-effect bg-[#0a0a0a] hover:bg-impulsoPink text-white text-center font-black py-5 rounded-[2rem] text-sm transition-all shadow-xl transform group-hover:-translate-y-2 uppercase tracking-widest"
                 >
-                  ¡QUIERO MI BECA AHORA!
+                  ASEGURAR MI BECA
                 </a>
-                <a 
-                  href={prog.infoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-white border-2 border-gray-100 text-gray-400 hover:text-enebGrey hover:border-enebGrey text-center font-black py-3 rounded-2xl text-[10px] transition-all uppercase tracking-widest"
-                >
-                  📄 Descargar Plan de Estudios
-                </a>
-                <p className="text-center text-[8px] md:text-[9px] font-black text-gray-400 uppercase tracking-widest">
-                  Pagos en EUR · USD · MXN · CLP · COP
+                <p className="text-center text-[9px] font-black text-gray-400 uppercase tracking-[0.2em]">
+                   Válido en: EUR · USD · MXN · CLP · COP
                 </p>
               </div>
             </article>
           ))}
-        </div>
-        
-        <div className="mt-16 md:mt-24 text-center animate-fade-in-up">
-           <div className="inline-block relative w-full max-w-4xl px-4">
-              <div className="absolute -inset-1 bg-gradient-to-r from-impulsoOrange to-impulsoPink rounded-3xl blur opacity-10"></div>
-              <div className="relative bg-white border border-gray-100 p-8 md:p-10 rounded-3xl shadow-sm">
-                 <h4 className="text-xl md:text-2xl font-black mb-4 tracking-tight">Consultoría Gratuita para {['Brasil', 'Chile', 'Colombia', 'USA', 'México', 'Ecuador', 'Europa'].join(', ')}</h4>
-                 <p className="text-sm md:text-base text-gray-500 font-medium mb-8">
-                    Recibe asesoría personalizada vía WhatsApp. Te ayudamos a formalizar tu beca ENEB y gestionar tu pago en moneda local sin comisiones extra.
-                 </p>
-                 <button 
-                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({behavior:'smooth'})}
-                  className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-black py-4 px-8 md:px-10 rounded-2xl shadow-lg transition-all transform hover:scale-105 flex items-center justify-center mx-auto"
-                  aria-label="Hablar con un asesor académico de ImpulsoIT por WhatsApp"
-                 >
-                    <span className="mr-2 text-xl md:text-2xl" aria-hidden="true">📱</span> HABLAR CON ASESOR EN VIVO
-                 </button>
-              </div>
-           </div>
         </div>
       </div>
     </section>
