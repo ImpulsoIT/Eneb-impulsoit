@@ -49,8 +49,8 @@ const App: React.FC = () => {
         style={{ width: `${scrollProgress}%` }}
       />
 
-      {/* Promo Bar con multimoneda dinámica */}
-      <div className="bg-[#0a0a0a] text-white py-3 px-4 text-center text-[10px] md:text-xs font-black uppercase tracking-[0.2em] relative z-[60] border-b border-white/5 overflow-hidden">
+      {/* Promo Bar Compacta */}
+      <div className="bg-[#0a0a0a] text-white py-2 px-4 text-center text-[9px] md:text-xs font-black uppercase tracking-[0.2em] relative z-[60] border-b border-white/5 overflow-hidden">
          <div className="relative z-10 animate-pulse flex items-center justify-center gap-4">
             <span className="hidden sm:inline">⚡ BECAS 89% ⚡</span>
             <span className="text-impulsoPink">PAGOS EN: EUR · USD · MXN · CLP · COP</span>
