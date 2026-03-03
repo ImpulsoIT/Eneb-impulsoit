@@ -50,10 +50,10 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-enebDark font-sans">
       {/* SECCIÓN 1 — BARRA STICKY SUPERIOR */}
-      <nav className="fixed top-0 left-0 right-0 bg-enebRed text-white z-[100] shadow-lg">
+      <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-[#FF007A] to-[#FF8A00] text-white z-[100] shadow-lg">
         <div className="container mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider text-center md:text-left">
-            <span>ESTE SAN VALENTÍN, EL <span className="text-yellow-300">FLECHAZO</span> ES CON TU CARRERA. 2 PLAZAS POR MENOS DE 600 DÓLARES. ¡SOLO HASTA EL 10/03!</span>
+            <span>IMPULSA TU CARRERA AL SIGUIENTE NIVEL: <span className="text-yellow-300">2 PLAZAS</span> POR MENOS DE 600 DÓLARES. ¡SOLO HASTA EL 10/03!</span>
           </div>
           <div className="flex items-center gap-4">
             <a 
@@ -83,16 +83,17 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-8">
-              <div className="text-white font-black text-3xl md:text-4xl tracking-tighter">ENEB</div>
-              <div className="h-10 w-px bg-white/30"></div>
-              <div className="text-white/80 text-[10px] md:text-xs leading-tight uppercase font-bold">
-                Escuela de Negocios<br />Europea de Barcelona
-              </div>
+              <img 
+                src="https://raw.githubusercontent.com/ImpulsoIT/Eneb-impulsoit/main/ImpulsoIT-ENEB.png" 
+                className="h-12 md:h-16 object-contain" 
+                alt="ImpulsoIT - Embajadores ENEB"
+                referrerPolicy="no-referrer"
+              />
             </div>
             
             <h1 className="text-3xl md:text-6xl font-black text-white mb-6 leading-tight uppercase">
               REGALA(TE)<br />
-              <span className="text-enebRed">UN DOBLE MÁSTER!</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-[#FF8A00]">UN DOBLE MÁSTER!</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-10 font-medium leading-relaxed max-w-xl">
@@ -102,12 +103,12 @@ const App: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a 
                 href={HOTMART_LINK}
-                className="w-full sm:w-auto bg-enebRed text-white px-8 py-4 rounded-md font-black text-sm uppercase shadow-lg hover:bg-red-700 transition-all text-center"
+                className="w-full sm:w-auto bg-gradient-to-r from-[#FF007A] to-[#FF8A00] text-white px-8 py-4 rounded-md font-black text-sm uppercase shadow-lg hover:brightness-110 transition-all text-center"
               >
                 ¡SÍ, QUIERO!
               </a>
               <div className="relative">
-                <div className="bg-white text-enebRed px-4 py-2 rounded-md font-black text-xs uppercase shadow-xl animate-bounce">
+                <div className="bg-white text-[#FF007A] px-4 py-2 rounded-md font-black text-xs uppercase shadow-xl animate-bounce">
                   HASTA EL 10/03<br />
                   <span className="text-[10px]">Hasta en 12 cuotas</span>
                 </div>
@@ -217,10 +218,10 @@ const App: React.FC = () => {
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-black/40"></div>
-                  <div className="absolute top-4 left-4 bg-enebRed text-white px-3 py-1 text-[10px] font-black uppercase rounded-sm">
+                  <div className="absolute top-4 left-4 bg-[#FF007A] text-white px-3 py-1 text-[10px] font-black uppercase rounded-sm">
                     {prog.title}
                   </div>
-                  <div className="absolute bottom-4 right-4 bg-white/90 text-enebRed p-2 rounded shadow-lg text-center min-w-[60px]">
+                  <div className="absolute bottom-4 right-4 bg-white/90 text-[#FF007A] p-2 rounded shadow-lg text-center min-w-[60px]">
                     <div className="text-xl font-black leading-none">{prog.plazas}</div>
                     <div className="text-[8px] font-bold uppercase">PLAZAS</div>
                   </div>
@@ -228,7 +229,7 @@ const App: React.FC = () => {
                 <div className="p-4 text-center">
                   <a 
                     href={HOTMART_LINK}
-                    className="inline-block text-enebDark font-black text-[10px] uppercase border-b-2 border-enebRed pb-1 hover:text-enebRed transition-colors"
+                    className="inline-block text-enebDark font-black text-[10px] uppercase border-b-2 border-[#FF007A] pb-1 hover:text-[#FF007A] transition-colors"
                   >
                     MATRICÚLATE AQUÍ
                   </a>
@@ -245,19 +246,19 @@ const App: React.FC = () => {
             
             <div className="mt-12 relative inline-block">
               <div className="bg-white text-enebDark p-8 rounded-lg shadow-2xl max-w-md mx-auto">
-                <div className="text-[10px] font-bold text-enebRed mb-2 uppercase">BECA EXTRAORDINARIA</div>
+                <div className="text-[10px] font-bold text-[#FF007A] mb-2 uppercase tracking-widest">BECA EXTRAORDINARIA</div>
                 <div className="text-sm font-black mb-4 uppercase">MBA + MÁSTER O DOBLE MÁSTER A ELECCIÓN</div>
                 <div className="text-[8px] text-gray-400 mb-4 uppercase">(CON PLAZA ADICIONAL INCLUIDA)</div>
                 <div className="text-2xl font-black mb-2 uppercase">POR MENOS DE 600 DÓLARES</div>
-                <div className="text-sm font-bold text-enebRed mb-6 uppercase">HASTA EN 12 CUOTAS</div>
+                <div className="text-sm font-bold text-[#FF007A] mb-6 uppercase tracking-widest">HASTA EN 12 CUOTAS</div>
                 <a 
                   href={HOTMART_LINK}
-                  className="block bg-enebRed text-white py-3 rounded font-black text-xs uppercase hover:bg-red-700 transition-all"
+                  className="block bg-gradient-to-r from-[#FF007A] to-[#FF8A00] text-white py-3 rounded font-black text-xs uppercase hover:brightness-110 transition-all"
                 >
                   ¡MATRICÚLATE AQUÍ!
                 </a>
               </div>
-              <div className="absolute -top-6 -right-6 bg-white text-enebRed p-3 rounded-md font-black text-[10px] uppercase shadow-xl rotate-12 border border-enebRed">
+              <div className="absolute -top-6 -right-6 bg-white text-[#FF007A] p-3 rounded-md font-black text-[10px] uppercase shadow-xl rotate-12 border border-[#FF007A]">
                 HASTA EL 10/03<br />
                 Hasta en 12 cuotas
               </div>
@@ -277,7 +278,12 @@ const App: React.FC = () => {
             <div className="flex flex-wrap gap-8 items-center opacity-80">
               <div className="flex items-center gap-4">
                 <div className="text-[10px] font-bold uppercase text-right">Titulaciones certificadas:</div>
-                <img src="https://eneb.es/wp-content/uploads/2021/05/logo-isabel-i.png" className="h-12 invert brightness-0" alt="Isabel I" />
+                <img 
+                  src="https://raw.githubusercontent.com/ImpulsoIT/Eneb-impulsoit/main/Isabel%201.png" 
+                  className="h-12 object-contain" 
+                  alt="Isabel I" 
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div className="flex items-center gap-4">
                 <div className="text-[10px] font-bold uppercase text-right">Proveedor de contenidos:</div>
@@ -294,7 +300,7 @@ const App: React.FC = () => {
               { val: "10 AÑOS", label: "+ 10 años formando a los mejores líderes" }
             ].map((stat, i) => (
               <div key={i} className="space-y-4">
-                <div className="text-2xl md:text-3xl font-black text-enebRed">{stat.val}</div>
+                <div className="text-2xl md:text-3xl font-black text-[#FF007A]">{stat.val}</div>
                 <div className="text-[10px] font-bold uppercase text-gray-400">{stat.label}</div>
               </div>
             ))}
@@ -355,21 +361,17 @@ const App: React.FC = () => {
               <h2 className="text-3xl md:text-5xl font-black uppercase mb-6">TUS DIPLOMAS,</h2>
               <p className="text-lg font-bold text-gray-500 mb-8 uppercase">en el ENEB PASSPORT.</p>
               <p className="text-gray-600 mb-8 leading-relaxed">Tu álbum de éxitos profesionales, con validez internacional.</p>
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-enebRed">
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#FF007A]">
                 <p className="text-sm font-bold text-gray-700 uppercase">¡Todas tus credenciales académicas tendrán la Apostilla de La Haya!</p>
               </div>
             </div>
             <div className="relative">
               <img 
-                src="https://eneb.es/wp-content/uploads/2021/05/eneb-passport.png" 
-                className="w-full max-w-md mx-auto drop-shadow-2xl" 
-                alt="ENEB Passport"
+                src="https://raw.githubusercontent.com/ImpulsoIT/Eneb-impulsoit/main/diplomas%20eneb.png" 
+                className="w-full max-w-md mx-auto drop-shadow-2xl rounded-lg" 
+                alt="Diplomas ENEB"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute -bottom-4 -right-4 bg-white p-2 shadow-lg rounded border border-gray-100 rotate-3">
-                <img src="https://eneb.es/wp-content/uploads/2021/05/diploma-ejemplo.png" className="w-32" alt="Diploma" />
-                <div className="text-[8px] font-bold text-center mt-1 text-gray-400 uppercase">EJEMPLO</div>
-              </div>
             </div>
           </div>
         </div>
@@ -390,22 +392,22 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-8">
-              <div className="text-2xl font-black tracking-tighter">THE <span className="text-enebRed">ENEB</span> WORLD</div>
+              <div className="text-2xl font-black tracking-tighter uppercase">THE <span className="text-[#FF007A]">IMPULSOIT</span> WORLD</div>
               <div className="h-8 w-px bg-white/30"></div>
-              <div className="text-xs uppercase font-bold">EXPERIENCE <span className="text-enebRed">CONGRESS</span></div>
+              <div className="text-xs uppercase font-bold">EXPERIENCE <span className="text-[#FF007A]">CONGRESS</span></div>
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-black uppercase mb-6">Networking Global<br /><span className="text-enebRed">¡COMUNIDAD EN CRECIMIENTO!</span></h2>
+            <h2 className="text-3xl md:text-5xl font-black uppercase mb-6">Networking Global<br /><span className="text-[#FF007A]">¡COMUNIDAD EN CRECIMIENTO!</span></h2>
             
             <div className="space-y-6 text-sm text-gray-300 leading-relaxed mb-10">
-              <p>Al matricularte en ENEB, te integrarás a una comunidad global en expansión, donde surgen oportunidades de networking como el <strong>ENEB Experience World Congress</strong>, que conectan talento de distintas partes del mundo.</p>
-              <p>La última edición reunió a estudiantes de 44 países y empresas como <strong>Michael Page, Dronak Robotics, FIDESOL, Eoniq Found, Talent Hub, Namencis Education, Crescenta y muchos más.</strong> Todos los graduados ampliaron su red profesional, participaron en conferencias sobre las últimas novedades empresariales y conectaron con expertos del sector.</p>
-              <p>¡Aprovecha ahora y matricúlate en ENEB!</p>
+              <p>Al matricularte a través de <strong>ImpulsoIT</strong>, te integrarás a una comunidad global en expansión, donde surgen oportunidades de networking como el <strong>ENEB Experience World Congress</strong>, que conectan talento de distintas partes del mundo.</p>
+              <p>La última edición reunió a estudiantes de 44 países y empresas líderes. Todos los graduados ampliaron su red profesional, participaron en conferencias sobre las últimas novedades empresariales y conectaron con expertos del sector.</p>
+              <p>¡Aprovecha ahora y matricúlate con ImpulsoIT!</p>
             </div>
 
             <a 
               href={HOTMART_LINK}
-              className="inline-block bg-enebRed text-white px-10 py-4 rounded-md font-black text-sm uppercase hover:bg-red-700 transition-all shadow-xl"
+              className="inline-block bg-gradient-to-r from-[#FF007A] to-[#FF8A00] text-white px-10 py-4 rounded-md font-black text-sm uppercase hover:brightness-110 transition-all shadow-xl"
             >
               ¡ME APUNTO!
             </a>
@@ -413,7 +415,7 @@ const App: React.FC = () => {
         </div>
         
         <div className="absolute bottom-10 right-10 hidden lg:block">
-          <div className="bg-white text-enebRed p-4 rounded-md font-black text-xs uppercase shadow-2xl rotate-6 border border-enebRed">
+          <div className="bg-white text-[#FF007A] p-4 rounded-md font-black text-xs uppercase shadow-2xl rotate-6 border border-[#FF007A]">
             HASTA EL 10/03<br />
             Hasta en 12 cuotas
           </div>
@@ -488,13 +490,14 @@ const App: React.FC = () => {
       <footer className="bg-white py-12 border-t border-gray-100">
         <div className="container mx-auto px-4 flex flex-col items-center gap-6">
           <div className="flex items-center gap-4">
-            <div className="text-enebDark font-black text-3xl tracking-tighter">ENEB</div>
-            <div className="h-8 w-px bg-gray-200"></div>
-            <div className="text-gray-400 text-[10px] leading-tight uppercase font-bold">
-              Escuela de Negocios<br />Europea de Barcelona
-            </div>
+            <img 
+              src="https://raw.githubusercontent.com/ImpulsoIT/Eneb-impulsoit/main/ImpulsoIT-ENEB.png" 
+              className="h-12 object-contain" 
+              alt="ImpulsoIT - Embajadores ENEB"
+              referrerPolicy="no-referrer"
+            />
           </div>
-          <p className="text-[10px] text-gray-400 uppercase font-bold">© {new Date().getFullYear()} ENEB. TODOS LOS DERECHOS RESERVADOS.</p>
+          <p className="text-[10px] text-gray-400 uppercase font-bold">© {new Date().getFullYear()} IMPULSOIT. TODOS LOS DERECHOS RESERVADOS.</p>
         </div>
       </footer>
     </div>
