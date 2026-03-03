@@ -57,7 +57,7 @@ const App: React.FC = () => {
           </div>
           <div className="flex items-center gap-4">
             <a 
-              href="https://wa.me/34600000000"
+              href="https://api.whatsapp.com/send/?phone=5515981723627&text&type=phone_number&app_absent=0"
               className="hidden md:flex items-center gap-2 text-[10px] bg-green-600 px-3 py-1 rounded-full hover:bg-green-700 transition-colors"
             >
               <span className="font-bold">¿TIENES DUDAS? Mándanos un WhatsApp</span>
@@ -425,83 +425,22 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-xl font-black uppercase mb-12">¡Llevamos una década haciendo historia en la formación empresarial!</h2>
           
-          <div className="max-w-4xl mx-auto relative group cursor-pointer">
-            <img 
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200" 
-              className="w-full rounded-xl shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-500" 
-              alt="Video Thumbnail"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-enebRed rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                <svg className="w-10 h-10 text-white ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-            <div className="absolute bottom-8 right-8 bg-white p-6 rounded-lg shadow-2xl text-left max-w-xs hidden md:block">
-              <div className="text-4xl font-black text-enebDark mb-2 uppercase">ASÍ<br />FUNCIONA<br />ENEB</div>
-              <div className="text-[10px] font-bold text-gray-400 uppercase">explicado por su <span className="text-enebRed">director académico</span></div>
-            </div>
+          <div className="max-w-4xl mx-auto relative shadow-2xl rounded-xl overflow-hidden aspect-video">
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/PY2mjTF69Jg" 
+              title="ASÍ FUNCIONA ENEB" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            ></iframe>
           </div>
 
           <p className="mt-12 text-sm font-bold text-gray-500 uppercase">¡GRACIAS POR FORMAR PARTE DE LA COMUNIDAD ENEB!</p>
         </div>
       </section>
 
-      {/* SECCIÓN 12 — ACCREDITATIONS & PARTNERS */}
-      <section className="py-24 bg-white border-t border-gray-100">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" 
-                className="w-full rounded-lg shadow-xl" 
-                alt="Students"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute -bottom-8 -right-8 bg-enebRed p-8 rounded-lg shadow-2xl hidden lg:block">
-                <div className="text-white font-black text-2xl uppercase">DÓNDE TRABAJAN<br />NUESTROS ALUMNOS?</div>
-              </div>
-            </div>
 
-            <div className="grid grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <img src="https://eneb.es/wp-content/uploads/2021/05/logo-isabel-i.png" className="h-10 opacity-80" alt="Isabel I" />
-                <h4 className="text-[10px] font-black uppercase">TITULACIONES CERTIFICADAS</h4>
-                <p className="text-[9px] text-gray-500 leading-relaxed uppercase">Todos los programas formativos están acreditados por la Universidad Isabel I.</p>
-              </div>
-              <div className="space-y-4">
-                <img src="https://eneb.es/wp-content/uploads/2021/05/logo-cum-laude.png" className="h-10 opacity-80" alt="Cum Laude" />
-                <h4 className="text-[10px] font-black uppercase">PREMIO CUM LAUDE</h4>
-                <p className="text-[9px] text-gray-500 leading-relaxed uppercase">Mejor escuela de negocios valorada por sus alumnos.</p>
-              </div>
-              <div className="space-y-4">
-                <img src="https://eneb.es/wp-content/uploads/2021/05/logo-hbi.png" className="h-10 opacity-80" alt="HBI" />
-                <h4 className="text-[10px] font-black uppercase">PROVEEDOR DE CONTENIDOS</h4>
-                <p className="text-[9px] text-gray-500 leading-relaxed uppercase">Tenemos un acuerdo con esta escuela para distribuir los contenidos de los programas formativos.</p>
-              </div>
-              <div className="space-y-4">
-                <div className="flex gap-4">
-                  <img src="https://eneb.es/wp-content/uploads/2021/05/logo-azen.png" className="h-8 opacity-80" alt="Azen" />
-                  <img src="https://eneb.es/wp-content/uploads/2021/05/logo-euphe.png" className="h-8 opacity-80" alt="Euphe" />
-                </div>
-                <h4 className="text-[10px] font-black uppercase">ASOCIADO A</h4>
-                <p className="text-[9px] text-gray-500 leading-relaxed uppercase">La prestigiosa organización de las mejores escuelas de negocios de España.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-24 text-center">
-            <h3 className="text-xs font-black uppercase mb-12">¿DÓNDE TRABAJAN NUESTROS ALUMNOS?</h3>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale">
-              <div className="text-xl font-black border-2 border-enebDark px-4 py-1 rounded">Deloitte.</div>
-              <div className="text-xl font-black">amazon</div>
-              <div className="text-xl font-black flex items-center gap-2"><div className="w-6 h-6 bg-enebDark rounded-full"></div> Santander</div>
-              <div className="text-xl font-black">Google</div>
-              <div className="text-xl font-black">MANGO</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* SECCIÓN 13 — FINAL CERTIFICATIONS */}
       <section className="py-24 bg-gray-50">
